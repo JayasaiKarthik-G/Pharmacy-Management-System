@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="images/sela logo2.png" alt="logo">
+            <div class="nav-items">
+                <a href="home.html">Home</a>
+                <a href="about us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact us.html" class="active">Contact Us</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contacts">
+            <div class="contact-box">
+                <i class="fa-solid fa-phone"></i>
+                <p>MOBILE NUMBER</p>
+                <h2>9848022338</h2>
+            </div>
+            <div class="contact-box">
+                <i class="fa-solid fa-envelope"></i>
+                <p>EMAIL ADDRESS</p>
+                <h2>selapharmacy@gmail.com</h2>
+            </div>
+            <div class="contact-box">
+                <i class="fa-solid fa-industry"></i>
+                <p>OFFICE ADDRESS</p>
+                <h3>SELA Pharmacy Office</h3>
+                <p>11th Floor, AIMSR, Jubilee Hills, Hyderabad, Telangana 500033</p>
+            </div>
+            <div class="contact-box">
+                <i class="fa-solid fa-clock"></i>
+                <p>WORKING HOURS</p>
+                <h3>Mon - Sat</h3>
+                <p>9:00 AM - 7:00 PM</p>
+            </div>
+        </section>
+
+        <section class="contact-details">
+            <div class="contact-container">
+                <h2>Send Us a Form</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">D.O.B :</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile no. :</label>
+                        <input type="tel" name="mobile" placeholder="9999999999" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group-ratio">
+                        <label><b>Gender :</b></label>
+                        <br>
+                        <input type="radio" name="gender" id="male" value="Male"> 
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" name="gender" id="female" value="Female"> 
+                        <label for="female">Female</label>
+                        <br>
+                        <input type="checkbox" name="gender" id="other" value="Other"> 
+                        <label for="other">Other</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Btest"><b>Blood Test : </b></label>
+                        <select name="Btest" class="Btest">
+                            <option value="select">Select option</option>
+                            <option value="CBC">CBC</option>
+                            <option value="HIV">HIV</option>
+                            <option value="Thyroid">Thyroid</option>
+                            <option value="Sugar">Sugar</option>
+                            <option value="LFT">LFT</option>
+                            <option value="Viral test">Viral test</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Form</button>
+                </form>
+            </div>
+
+            <div class="map">
+                <h2>Our Location</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30452.856448467654!2d78.38917174875805!3d17.43063528710888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96cc62a87613%3A0xa8317fa22362be49!2z4LCc4LGC4LCs4LC_4LCy4LGAIOCwueCwv-CwsuCxjeCwuOCxjSwg4LC54LGI4LCm4LCw4LC-4LCs4LC-4LCm4LGNLCDgsKTgsYbgsLLgsILgsJfgsL7gsKM!5e0!3m2!1ste!2sin!4v1731215787159!5m2!1ste!2sin" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+          <p>&copy; Est 2024 SELA Pharmacy. All Rights Reserved.</p>
+          <p>Contact us today to learn more about our products and services.</p>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+          </ul>
+          <hr style="width: 50%;">
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
